@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, button, input, select, textarea {
+    font-family: 'poppins', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+:root {
+    --dark-nlue: #3b3b3b;
+    --light-gray: #bfbfc1;
+}
+
+h2, h4 {
+    margin: 1px;
+}
+
+.ssa {
+    font-size: 30px;
+}
+
+h4 {
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0;
+    font-weight: 100;
+}
+
+.iphone-container {
+    width: 305px;
+    height: 600px;
+    background-color: var(--dark-nlue);
+    border-radius: 30px;
+    border: 15px solid #111;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 40px 10px 20px;
+}
+
+.iphone-container .notch {
+    height: 18px;
+    width: 180px;
+    background: #111;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 90px);
+}
+
+.iphone-container .iphone-menu {
+    height: 2px;
+    width: 90px;
+    border-radius: 5px;
+    background: var(--light-gray);
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 45px);
+}
+
+.iphone-container svg {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0 10px;
+}
+
+.iphone-container .week {
+    color: var(--light-gray);
+    text-align: left;
+    padding: 0 20px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 7px;
+}
