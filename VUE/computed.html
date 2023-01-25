@@ -12,17 +12,16 @@
 
         <span v-if="isUnderAge">Você precisa ser maior de 18 Anos</span>
         <span v-else-if="isOld">Você é muito velhor para beber</span>
-        <template>
+        <template v-else>
             <span>Veja os items:</span>
             <ul>
                 <li>cachaça</li>
-                <li>51</li>
                 <li>Black Label</li>
             </ul>
         </template>
         <ul>
             <li v-for="user in adultUsers">
-                {{user.name}}
+                {{ user.name }}
             </li>
                 
         </ul>

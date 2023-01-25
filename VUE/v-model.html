@@ -9,9 +9,29 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" v-model="name">
-
+        <!--input-->
+        <input type="text" placeholder="Digite Aqui" v-model="name">
+        <br>
         {{name}}
+        <br><br>
+        <!--Checkbox simples com valor booleano:-->
+        <input type="checkbox" id="checkbox" v-model="checked">
+        <label for="checkbox">{{ checked }}</label>
+        <br><br>
+        <!--Múltiplos checkboxes, associados a um mesmo Array:-->
+        <input type="checkbox" id="Marivaldo" value="Marivaldo" v-model="checkedNames">
+        <label for="checkbox">Marivaldo</label>
+        <input type="checkbox" id="Cabeto" value="Cabeto" v-model="checkedNames">
+        <label for="checkbox">Cabeto</label>
+        <input type="checkbox" id="Jucicleydi" value="Jucicleydi" v-model="checkedNames">
+        <label for="checkbox">Jucicleydi</label>
+        <br>
+        <span> Nomes assinados{{ checkedNames }}</span>
+        <br><br>
+        
+
+
+        
 
     </div>
 

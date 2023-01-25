@@ -4,13 +4,13 @@ var app = new Vue ({
     data: {
         age: 17,
         list: [
-            {name: 'Rodinalva', age: '25'},
-            {name: 'Cabeto', age: '18'},
+            {name: 'Rodinalva', age: '15'},
+            {name: 'Cabeto', age: '19'},
             {name: 'Marivaldo', age: '67'}
         ]
     },
     created() {
-        this.changeAge (25)
+        this.changeAge (67)
     },
     methods: {
         changeAge(value) {
@@ -29,7 +29,7 @@ var app = new Vue ({
             console.log('É idade ok');
         },
     },
-    computed: {
+    computed: { //só retorna quando ouver mudança na variavel
         isUnderAge() {
             return this.age < 18;
         },
@@ -37,7 +37,7 @@ var app = new Vue ({
             return this.age > 60;
         },
         adultUsers() {
-            return this.list.filter(el => el.age >18);
+            return this.list.filter(el => el.age > 18);
         }
     }
 });

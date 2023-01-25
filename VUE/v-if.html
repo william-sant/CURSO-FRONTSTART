@@ -11,6 +11,8 @@
     
     <div id="app">
 
+        <h1 v-if="title">{{title}}</h1>
+        <br>
         <span v-if="show">william</span><br>
         <button @click="onShowClick">
             {{ show ? 'Esconder' : 'Mostrar'}}
